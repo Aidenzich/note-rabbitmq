@@ -31,3 +31,10 @@ There are two different AMQP RPC commands for retrieving messages from a queue i
 |-|-|
 | `Ready` | When a message is waiting to be processed |
 | `Unacked` | While a consumer is working on the messages, they get the status unacked, which means that the consumer has promised to process them but has not acknowledged them yet. When the consumer crashes, the messages will be delivered again |
+
+## Reference
+- https://stackoverflow.com/questions/31915773/rabbitmq-what-are-ready-and-unacked-types-of-messages
+- https://stackoverflow.com/questions/13037121/in-pika-or-rabbitmq-how-do-i-check-if-any-consumers-are-currently-consuming
+- https://www.cloudamqp.com/blog/part4-rabbitmq-13-common-errors.html
+- https://www.cloudamqp.com/blog/part1-rabbitmq-best-practice.html
+- https://blog.51cto.com/u_15065852/2604275
